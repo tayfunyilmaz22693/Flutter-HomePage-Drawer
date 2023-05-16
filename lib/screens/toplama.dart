@@ -23,7 +23,7 @@ class _ToplamaState extends State<Toplama> {
         },
         child: const Icon(Icons.add),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       appBar: AppBar(
         title: const Text('Toplama'),
         actions: const [

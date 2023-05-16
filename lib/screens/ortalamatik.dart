@@ -55,7 +55,7 @@ class _OrtalamatikState extends State<Ortalamatik> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       appBar: AppBar(
         title: const Text(
           "OrtalaMatik",
@@ -290,7 +290,6 @@ class _OrtalamatikState extends State<Ortalamatik> {
               _dersNotu.clear();
             });
           }
-          print(lessons);
         },
         child: const Icon(
           Icons.add,

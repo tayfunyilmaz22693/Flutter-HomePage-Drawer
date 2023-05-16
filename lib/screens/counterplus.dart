@@ -14,13 +14,13 @@ class _CounterPlusState extends State<CounterPlus> {
 
   @override
   Widget build(BuildContext context) {
-    Color _textColor = Colors.black;
+    Color textColor = Colors.black;
     if (_counter > 0) {
-      _textColor = Colors.green;
+      textColor = Colors.green;
     } else if (_counter == 0) {
-      _textColor = Colors.black;
+      textColor = Colors.black;
     } else if (_counter < 0) {
-      _textColor = Colors.red;
+      textColor = Colors.red;
     }
 
     return Scaffold(
@@ -34,24 +34,24 @@ class _CounterPlusState extends State<CounterPlus> {
           children: <Widget>[
             FloatingActionButton(
               onPressed: _incrementCounter,
-              child: const Icon(Icons.add),
               hoverColor: Colors.grey,
-              backgroundColor: _textColor,
+              backgroundColor: textColor,
+              child: const Icon(Icons.add),
             ),
             const SizedBox(height: 16),
             Text(
               '$_counter',
               style: TextStyle(
                 fontSize: _fontSize,
-                color: _textColor,
+                color: textColor,
               ),
             ),
             const SizedBox(height: 16),
             FloatingActionButton(
               onPressed: _decrementCounter,
-              child: const Icon(Icons.remove),
               hoverColor: Colors.grey,
-              backgroundColor: _textColor,
+              backgroundColor: textColor,
+              child: const Icon(Icons.remove),
             ),
           ],
         ),
@@ -60,8 +60,8 @@ class _CounterPlusState extends State<CounterPlus> {
         onLongPress: _decreaseFontSize,
         child: FloatingActionButton(
           onPressed: _increaseFontSize,
-          child: const Icon(Icons.add),
           backgroundColor: Colors.blue,
+          child: const Icon(Icons.add),
         ),
       ),
     );

@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import 'package:odev/models/todo.dart';
 
 class TodoDetail extends StatefulWidget {
-  const TodoDetail({super.key});
+  final Todo todo;
+  const TodoDetail({required this.todo, super.key});
   @override
   State<TodoDetail> createState() => _TodoDetailState();
 }
@@ -11,11 +12,9 @@ class TodoDetail extends StatefulWidget {
 class _TodoDetailState extends State<TodoDetail> {
   @override
   Widget build(BuildContext context) {
-    Todo todo = Get.arguments;
-
     return Scaffold(
       appBar: AppBar(
-        title: Text("${todo.title} detay"),
+        title: Text("${widget.todo.title} detay"),
         actions: const [],
       ),
       body: const Center(

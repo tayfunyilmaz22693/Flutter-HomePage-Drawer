@@ -1,7 +1,5 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:odev/screens/todolist.dart';
 
 class SayisalLoto extends StatefulWidget {
   const SayisalLoto({super.key});
@@ -21,14 +19,14 @@ class _SayisalLotoState extends State<SayisalLoto> {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Text("Bakiyeniz:", style: TextStyle(fontSize: 25.0),),
-                Icon(
+                const Text("Bakiyeniz:", style: TextStyle(fontSize: 25.0),),
+                const Icon(
                   Icons.attach_money,
                   size: 30.0,
                 ),
                 Text(
                   "$money",
-                  style: TextStyle(fontSize: 25.0),
+                  style: const TextStyle(fontSize: 25.0),
                 ),
               ],
             ),
@@ -144,12 +142,12 @@ class _SayisalLotoState extends State<SayisalLoto> {
                   Padding(
                     padding: const EdgeInsets.only(right: 50.0),
                     child: ElevatedButton(
-                        onPressed: () {}, child: Text("Rastgele Sayı")),
+                        onPressed: () {}, child: const Text("Rastgele Sayı")),
                   ),
                   const SizedBox(
                     height: 30.0,
                   ),
-                  ElevatedButton(onPressed: () {}, child: Text("Oyna")),
+                  ElevatedButton(onPressed: () {}, child: const Text("Oyna")),
                 ],
               )
             ],

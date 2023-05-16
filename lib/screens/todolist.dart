@@ -23,7 +23,7 @@ class _TodolistState extends State<Todolist> {
         onPressed: addTodo,
         child: const Icon(Icons.add),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       appBar: AppBar(
         title: const Text('Todo List'),
         actions: const [
@@ -82,8 +82,8 @@ class _TodolistState extends State<Todolist> {
                             : null,
                       ),
                     ),
-                    subtitle: InkWell(
-                      child: const Text("Bilgi Giriniz."),
+                    subtitle: const InkWell(
+                      child: Text("Bilgi Giriniz."),
                      
                     ),
                     leading: item.isComplated

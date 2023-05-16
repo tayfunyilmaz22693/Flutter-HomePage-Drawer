@@ -18,7 +18,6 @@ class _HomeState extends State<Home> {
     const Text("İletişim"),
     const Text("Ayarlar"),
   ];
-  final ScrollController _homeController = ScrollController();
 
   @override
   Widget build(BuildContext context) {

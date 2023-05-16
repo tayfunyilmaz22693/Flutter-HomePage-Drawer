@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:odev/screens/home.dart';
-import 'package:odev/screens/home.dart';
-
 import 'screens/counter.dart';
 import 'screens/nalan.dart';
 import 'screens/toplama.dart';
